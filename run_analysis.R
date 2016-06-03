@@ -44,7 +44,8 @@ train_test_sub<-cbind(train_test_subject,train_test_sub)
 # for each activity and each subject (participant).
 summary_train_test_sub<-aggregate(train_test_sub[,3:81],train_test_sub[,1:2],FUN=mean)
 write.csv(train_test_sub,"tidydata.csv")
+write.table(train_test_sub,file="tidydata.txt",col.names = F, row.names = F)
 write.csv(summary_train_test_sub,"new_tidydata_average.csv")
-write.table(summary_train_test_sub,file="summary_train_test_sub.txt",col.names = F, row.names = F)# So to summarize, tidy data set:train_test_sub
+write.table(summary_train_test_sub,file="new_tidydata_average.txt",col.names = F, row.names = F)# So to summarize, tidy data set:train_test_sub
 # New data set average by activity and subject: summary_train_test_sub
  
