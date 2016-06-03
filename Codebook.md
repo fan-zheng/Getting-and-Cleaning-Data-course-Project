@@ -1,7 +1,7 @@
 #  Code book expains the updated tidy data
 ## Main changes made for the tidy data according to Assignment requirement in bold:
 
-** In this tidy dataset we only have columns that calculate Mean value and Standard deviation.
+**In this tidy dataset we only have columns that calculate Mean value and Standard deviation.
 To make the variable readable, in the original variable names, all "t" at the very beginning is substituted
 by "time", "f" at the beginning is substituted to frequency,"ACC" to "Accelerator",
 "Gyro" to "Gyroscope","Mag" to "Magnitude".
